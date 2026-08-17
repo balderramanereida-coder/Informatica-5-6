@@ -1,4 +1,4 @@
-def main():
+rectangle.py
     # planet = input("Planet:")
 
     # #Separation
