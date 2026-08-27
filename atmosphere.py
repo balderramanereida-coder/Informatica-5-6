@@ -10,7 +10,15 @@ def main():
     if layer == "Exosphere":
         print("Your altitude lever will be between 700 and 10,000 km")
         altitude = float(input("Enter exact altitude: "))
-        print(altitude * 3)
+        print(altitude )
+
+    elif layer == "Mesosphere":
+        print("Your altitude lever will be between 700 and 10,000 km")
+
+    elif layer == "Stratosphere":
+        print("Your altitude lever will be between 700 and 10,000 km")
+    elif layer == "Troposphere":
+        print("Your altitude lever will be between 700 and 10,000 km")
 
 
     else:
