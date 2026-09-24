@@ -1,0 +1,15 @@
+def main():
+
+    print("1. Write a description for a while loop.")
+
+    print("When we use a while loop, we will repeat our code. This type of loop will only repeat as long as a specified thing or condition stays true. When the condition that we stablished changes to false, then the while loop will end.")
+
+    print("2. Write a description for a for loop.")
+
+    print("This other type of loop iterate a known number of times.We use this one to go through sequences like lists, numbers, or strings.")
+
+    print("3. Compare a while loop to a for loop")
+
+    print("The for loop process every element in a list, the while loop promt a user until they enter the valid information.")
+if __name__ == "__main__":
+    main()
