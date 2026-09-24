@@ -7,8 +7,9 @@ def main():
         times_table = input("Enter a number(1-10 or exit): ").lower().strip()
 
         if times_table == "exit":
+            break
 
-        elif:
+        elif times_table in valid_nums:
             max_value = int(input("Enter maxium value for the times table: "))
 
             print(f"Here is the {times_table}times table")
@@ -17,7 +18,7 @@ def main():
                 answer = x * int(times_table)
                 print(f"{x}times{times_table} is {answer}")
         else:
-            print("invalid command")
+            print("invalid command.")
 
 
 if __name__ == "__main__":
