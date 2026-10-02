@@ -1,26 +1,34 @@
 def main():
 
-    print("Welcome to the time tables quiz!")
-    valid_nums = []
-    for i in range(1,11):
-        valid_nums.append(str(i))
+    print("Welcome to the times table quiz")
+    while True
+        try
+        times_table = int(input("Enter a times table that you would like to be tested on (1-10): "))
+            if 1<= times_table <= 10:
+                break
+            print("Please enter a number between (1-10)")
 
-    while True:
-        times_table = input("Enter a times table that you would like to be tested on (1-10 or exit): ").lower().strip()
+        except ValueError
+            print("Invalid input.Please enter a valid whole number")
 
-        if times_table == "exit":
-            break
+        while True
+            try:
+                 max_value = int(input("Enter the maximum value for your times table: "))
 
-        elif times_table in valid_nums:
-            max_value = int(input("Enter maxium value for the times table: "))
+            if max_value > 0:
+                break
+            print("Enter a positive number")
+            
+        except ValueError
 
-            print(f"Here is the {times_table}  +++++++++++++++++++++++++++++++++++++++++++++++++++++++table")
 
-            for x in range(1,max_value+ 1):
-                answer = x * int(times_table)
-                print(f"{x}times{times_table} is {answer}")
+       print(f"Here is the {times_table} times table")
+
+            for x in range(1, 11):
+                answer = x * times_table
+                print(f"{x} times {times_table} is {answer}")
         else:
-            print("invalid command.")
+            print("Invalid command.")
 
 
 if __name__ == "__main__":
