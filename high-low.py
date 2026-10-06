@@ -12,22 +12,24 @@ def main():
     higth(8,2)
 
 
-    def lower(a,b):
-        if a > b:
-            highest_num = a
-            print(f"highest number = {round(highest_num,1)}")
+    def lower(a,b,c):
+        if a < (b,c):
+            lower_num = a
+            print(f"The lower number is: {round(lower_num,1)}")
 
-        elif a < b:
-            highest_num2 = b
-            print(f"highest number = {round(highest_num2,1)}")
+        elif b < (a,c):
+            lower_num = b
+            print(f"The lower number is: {round(lower_num,1)}")
 
         else:
-            print("Equal numbers")
+            c < (a,b)
+            print(f"The lower number is: {round(lower_num,1)}")
 
     num1 = float(input("Enter your first numer: "))
     num2 = float(input("Enter your second number: "))
+    num3 = float(input("Enter your third numer: "))
 
-    higth(num1,num2)
+    lower(num1,num2,num3)
 
 
 if __name__ == "__main__":
