@@ -5,6 +5,7 @@ def main():
     day3 = [20,19,18,18,17,17,16,16,18,20,22,24,25,26,27,27]
     # TO-DO: Print daily headers and call max_temperature / min_temperature
 
+    print()
     print("Today")
     max_temperature(day1)
     min_temperature(day1)
@@ -16,6 +17,7 @@ def main():
     print("Day after tomorrow")
     max_temperature(day3)
     min_temperature(day3)
+    print()
 
 def max_temperature(temperatures):
     highest_temp = temperatures[0]
