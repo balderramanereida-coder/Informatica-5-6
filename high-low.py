@@ -15,19 +15,19 @@ def main():
     def lower(a,b,c):
         if a < (b,c):
             lower_num = a
-            print(f"The lower number is: {round(lower_num,1)}")
+            print(f"The lower number is {lower_num}")
 
         elif b < (a,c):
             lower_num = b
-            print(f"The lower number is: {round(lower_num,1)}")
+            print(f"The lower number is: {lower_num}")
 
         else:
             c < (a,b)
-            print(f"The lower number is: {round(lower_num,1)}")
+            print(f"The lower number is: {lower_num}")
 
-    num1 = float(input("Enter your first numer: "))
-    num2 = float(input("Enter your second number: "))
-    num3 = float(input("Enter your third numer: "))
+    num1 = int(input("Enter your first numer: "))
+    num2 = int(input("Enter your second number: "))
+    num3 = int(input("Enter your third numer: "))
 
     lower(num1,num2,num3)
 
