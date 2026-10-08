@@ -20,7 +20,7 @@ def main():
                     print("Incorrect")
         break
     else:
-        print("Invalid command.")
+    print("Invalid command.")
 
 
 
