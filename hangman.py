@@ -26,7 +26,20 @@ def start_game(file):
 
     with open(file) as random_w:
         content = random_w.read().splitlines()
-    print(random.choice(content))
+        secret_word = random.choice(content)
+        secret_word = (["_"] * len(secret_word))
+    print(" ".join(secret_word))
+
+    while True:
+        guess = input("Take a guess: ")
+        if len(guess) == 1:
+            break
+        else:
+            print("Invalid guess. Try again.")
+
+    for i in secret_word:
+        if guess == i
+
 
 if __name__ == "__main__":
     main()
